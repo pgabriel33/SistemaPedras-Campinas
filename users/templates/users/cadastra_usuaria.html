@@ -1,7 +1,10 @@
-{% extends 'cadastro/base.html' %}
+{% extends 'publico/home/base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
+<link href="{% static 'css/cadastra_usuario.css' %}" rel="stylesheet" type="text/css">
+<script  type="text/javascript" src= "{% static 'js/cadastra_usuaria.js' %}"></script>
+<script  type="text/javascript" src= "{% static 'js/api_cep.js' %}"></script>
 
 <div class="wrapper">
   <form id="formCadUsuario"  method="POST">
@@ -45,15 +48,5 @@
          <button type="button" class="btn btn-danger">Cancelar</button>
   </form>
 </div>
-
-
-
-
-<script  type="text/javascript" src= {% static 'js/cadastra_usuaria.js' %}></script>
-<script  type="text/javascript" src= {% static 'js/api_cep.js' %}></script>
-
-
-
-
 {% endblock %}
 

@@ -9632,7 +9632,7 @@ home:
     - '1'
     - 5.0.0
     - 5.7.0
-  label: home
+  label: __home
   search:
     terms:
       - abode
@@ -9878,7 +9878,7 @@ house-damage:
       - building
       - devastation
       - disaster
-      - home
+      - __home
       - insurance
   styles:
     - solid
@@ -10062,7 +10062,7 @@ igloo:
       - dome
       - dwelling
       - eskimo
-      - home
+      - __home
       - house
       - ice
       - snow
