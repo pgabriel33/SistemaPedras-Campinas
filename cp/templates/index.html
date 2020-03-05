@@ -8,11 +8,11 @@
                 <ul class="nav">
                     <li>
                         <a href="index.html">
-                            <img src="public/img/logo1.png" style= " background :#79b2c5" ></img>
+                            <img src="{% static 'image/logo1.png' %}" style= " background :#79b2c5" ></img>
                         </a>
                     </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./public/html/login.html"><i class="fas fa-user"></i> Login</a>
+                            <a class="nav-link active" href="{% url 'login' %}"><i class="fas fa-user"></i> Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-heart"></i> Favoritos</a>
@@ -50,17 +50,17 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="div-img-carousel">
-                        <img src="./public/img/carousel2.png" class="d-block w-100" alt="..." />
+                        <img src="{% static 'image/carousel2.png' %}" class="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="div-img-carousel">
-                        <img src="./public/img/carousel3.jpg" class="d-block w-100" alt="..." />
+                        <img src="{% static 'image/carousel3.jpg' %}" class="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="div-img-carousel">
-                        <img src="./public/img/carousel4.jpg" class="d-block w-100" alt="..." />
+                        <img src="{% static 'image/carousel4.jpg' %}" class="d-block w-100" alt="..." />
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                                 <div>
                                     <div class="product-imagem">
                                         <div class="place-container">
-                                            <li class="li-produto"><a href="#"><img class="div-produto" src="public/img/pedra1.jpeg"
+                                            <li class="li-produto"><a href="#"><img class="div-produto" src="{% static 'image/pedra1.jpeg' %}"
                                                       width="200" height="200" style="margin: 0 0 0 0px"></a>
 
                                                 <div class="detail-product">
@@ -147,7 +147,7 @@
                                 <div>
                                     <div class="product-imagem">
                                         <div class="place-container">
-                                            <li class="li-produto"><a href="#"><img class="div-produto" src="public/img/pedra2.jpeg"
+                                            <li class="li-produto"><a href="#"><img class="div-produto" src="{% static 'image/pedra2.jpeg' %}"
                                                         width="200" height="200" style="margin: 0 0 0 30px"></a>
 
                                                 <div class="detail-product">
@@ -176,7 +176,7 @@
                                 <div>
                                     <div class="product-imagem">
                                         <div class="place-container">
-                                            <li class="li-produto"><a href="#"><img class="div-produto" src="public/img/pedra3.jpeg"
+                                            <li class="li-produto"><a href="#"><img class="div-produto" src="{% static 'image/pedra3.jpeg' %}"
                                                         width="200" height="200" style="margin: 0 0 0 60px"></a>
 
                                                 <div class="detail-product">
@@ -205,7 +205,7 @@
                                 <div>
                                     <div class="product-imagem">
                                         <div class="place-container">
-                                            <li class="li-produto"><a href="#"><img class="div-produto" src="public/img/pedra4.jpeg"
+                                            <li class="li-produto"><a href="#"><img class="div-produto" src="{% static 'image/pedra4.jpeg' %}"
                                                         width="200" height="200" style="margin: 0 0 0 90px"></a>
 
                                                 <div class="detail-product">
@@ -234,7 +234,7 @@
                         <div>
                             <div class="product-imagem">
                                 <div class="place-container">
-                                    <li class="li-produto"><a href="#"><img class="div-produto" src="public/img/pedra5.jpeg"
+                                    <li class="li-produto"><a href="#"><img class="div-produto" src="{% static 'image/pedra5.jpeg' %}"
                                                 width="200" height="200" style="margin: 0 0 0 120px"></a>
 
                                         <div class="detail-product">
