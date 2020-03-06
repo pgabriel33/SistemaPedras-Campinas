@@ -1,14 +1,15 @@
 from .form import FormUser
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from .form import LoginForm
-
+from django.contrib.auth import logout
 class register(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('home')
@@ -51,4 +52,9 @@ def user_login(request):
     else:
         form = LoginForm()
     return render(request, 'users/login.html', {'form': form})
+
+@login_required
+def sair(request):
+    logout(request)
+    return redirect('index')
 

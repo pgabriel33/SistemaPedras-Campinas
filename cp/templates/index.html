@@ -11,14 +11,20 @@
                             <img src="{% static 'image/logo1.png' %}" style= " background :#79b2c5" ></img>
                         </a>
                     </li>
+                    {% if user %}
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'logout' %}"><i class="fas fa-user"></i> LogOff</a>
+                        </li>
+                    {% else %}
                         <li class="nav-item">
                             <a class="nav-link active" href="{% url 'login' %}"><i class="fas fa-user"></i> Login</a>
                         </li>
+                    {% endif %}
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'cadastra' %}"><i class="fas fa-heart"></i> Registrar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./public/html/login.html"><i class=""></i>Minha
+                            <a class="nav-link" href="{% url 'logout' %}"><i class=""></i>Minha
                     </a>
                         </li>
                         <li class="nav-item">
