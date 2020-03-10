@@ -25,6 +25,7 @@ def novo_user(request):
             post = form_user.save(commit=False)
             post.nome_usuario = request.user
             post.save()
+            return redirect('/')
             
 
 
