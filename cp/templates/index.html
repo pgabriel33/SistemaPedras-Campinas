@@ -351,11 +351,15 @@ Copy
 
 
 <script>
-var user = "{{user.nome}}";
-alert(user)
+var user = "{{test}}";
+alert("{{test}}")
 if(user){
-
+    alert('oioi')
+    // alert('verdade')
     $('#exampleModalCenter').modal()
 }
+// else{
+//     alert('falso')
+// }
 </script>
 {% endblock %}

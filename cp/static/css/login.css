@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     height: 100vh;
 
-    background: url("../img/background.png") no-repeat center center fixed;
+    background: url("../image/background.png") no-repeat center center fixed;
     background-size: cover;
 
     -webkit-background-size: cover; /* SAFARI / CHROME */

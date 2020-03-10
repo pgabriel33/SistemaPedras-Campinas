@@ -11,9 +11,10 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from .form import LoginForm
 from django.contrib.auth import logout
+
 class register(generic.CreateView):
     form_class = UserCreationForm
-    success_url = reverse_lazy('informacoes')
+    success_url = reverse_lazy('login')
     template_name = 'users/register.html'
 
 #cria as informações do usuario
